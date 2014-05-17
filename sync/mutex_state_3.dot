@@ -1,0 +1,34 @@
+graph {
+    node [shape="circle"];
+    edge [dir="forward", len="2.0"];
+
+    rankdir=LR;
+
+    nnn [label="---"];
+    nnl [label="--L"];
+    swn [label="SW-"];
+    snn [label="S--", pos="0,0"];
+    snl [label="S-L"];
+    nwn [label="-W-"];
+    nwl [label="-WL"];
+    swl [label="SWL"];
+
+    nnn -- nnl [label="1", color="red"];
+    nnl -- nnn [label="2", color="red"];
+    nnl -- snl [label="3", color="blue"];
+    snl -- snl [label="4", color="green"];
+    snl -- snn [label="5", color="blue"];
+    snn -- snl [label="6", color="green"];
+    snn -- nwn [label="7", color="blue"];
+    nwn -- nnl [label="8", color="blue"];
+    snn -- swn [label="9", color="green"];
+    swn -- snl [label="10", color="green"];
+    swn -- swl [label="11", color="green"];
+    swl -- swn [label="12", color="green"];
+    swl -- swl [label="13", color="green"];
+    nwn -- nwl [label="14", color="blue"];
+    nwl -- nwn [label="15", color="blue"];
+    nwl -- swl [label="16", color="green"];
+    nwl -- snl [label="17", color="blue"];
+    swl -- snl [label="18", color="green"];
+}
